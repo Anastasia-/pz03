@@ -1,0 +1,45 @@
+\select@language {russian}
+\contentsline {chapter}{Введение}{3}{chapter*.3}
+\contentsline {chapter}{\numberline {1}Анализ проблематики}{4}{chapter.1}
+\contentsline {section}{\numberline {1.1}Формальные основы системы Coq}{4}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Исчисление конструкций}{4}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Индуктивные типы}{10}{subsection.1.1.2}
+\contentsline {chapter}{\numberline {2}Разработка моделей и алгоритмов }{11}{chapter.2}
+\contentsline {chapter}{\numberline {3}Результаты проектирования}{12}{chapter.3}
+\contentsline {chapter}{\numberline {4}Реализация и экспериментальная проверка}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}Реализация CIC в системе автоматического доказательства Coq}{13}{section.4.1}
+\contentsline {section}{\numberline {4.2}Спецификация языка Gallina}{14}{section.4.2}
+\contentsline {section}{\numberline {4.3}Механизм вывода}{15}{section.4.3}
+\contentsline {section}{\numberline {4.4}Введение констант}{17}{section.4.4}
+\contentsline {section}{\numberline {4.5}Разбор случаев}{18}{section.4.5}
+\contentsline {chapter}{Заключение}{20}{chapter*.11}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {russian}
+\select@language {russian}
+\select@language {russian}
+\select@language {russian}
+\select@language {russian}
+\select@language {russian}
+\select@language {russian}
+\select@language {russian}
+\select@language {russian}
+\select@language {russian}
+\select@language {russian}
+\select@language {russian}
+\select@language {russian}
+\select@language {russian}
+\contentsline {chapter}{Приложение \numberline {А}Правила эквивалентности типов, видов и термов}{24}{Приложение.1.Alph1}
+\contentsline {chapter}{Приложение }{24}{Приложение.1.Alph1}

@@ -1,0 +1,100 @@
+﻿\chapter{Правила эквивалентности типов, видов и термов}\label{app-format}
+\addcontentsline{toc}{chapter}{}
+
+Правила эквивалентности для видов:
+    \begin{mathpar}
+      \inferrule{
+        \Gamma \ \vdash \ T_{1} \equiv T_{2} \ :: \ \ast \\ \Gamma , \ x:T_{1} \ \vdash \ K_{1} \ \equiv \ K_{2}
+      } {
+				\Gamma \ \vdash \ \Pi \ x : T_{1}.K_{1} \ \equiv \ \Pi \ x : T_{2}.K_{2}
+			} \and 
+      \inferrule{
+				\Gamma \ \vdash \ K
+      }{
+        \Gamma \ \vdash \ K \ \equiv \ K
+      } 
+			\end{mathpar}
+			\begin{mathpar}
+      \inferrule{
+       \Gamma \ \vdash \ K_{1} \ \equiv \ K_{2}
+      }{
+        \Gamma \ \vdash \ K_{2} \ \equiv \ K_{1}
+      } \and 
+      \inferrule{
+       \Gamma \ \vdash \ K_{1} \ \equiv \ K_{2} \\ \Gamma \ \vdash \ K_{2} \ \equiv \ K_{3}
+      }{
+        \Gamma \ \vdash \ K_{1} \ \equiv \ K_{3}
+      } 
+    \end{mathpar}
+
+Правила эквивалентности для типов:
+    \begin{mathpar}
+      \inferrule{
+        \Gamma \ \vdash \ S_{1} \equiv T_{1} \ :: \ \ast \\ \Gamma , \ x:T_{1} \ \vdash \ S_{2} \ \equiv \ T_{2} \ :: \ \ast 
+      } {
+				\Gamma \ \vdash \ \Pi \ x : S_{1}.S_{2} \ \equiv \ \Pi \ x : T_{1}.T_{2}  \ :: \ \ast 
+			} \and 
+      \inferrule{
+				\Gamma \ \vdash \ T \ :: \ K
+      }{
+        \Gamma \ \vdash \ T \ \equiv \ T \ :: \ K
+      } 
+			\end{mathpar}
+			\begin{mathpar}
+			\inferrule{
+        \Gamma \ \vdash \ S_{1} \equiv S_{2} \ :: \ \Pi x : T.K \\ \Gamma , \ t_{1} \ \equiv \ t_{2} :T
+      } {
+				\Gamma \ \vdash \ S_{1} \ t_{1} \ \equiv \ S_{2} \ t_{2} \ : [x \mapsto t_{1}]K
+			} \and 
+      \inferrule{
+       \Gamma \ \vdash \ T \ \equiv \ S \ :: \ K
+      }{
+        \Gamma \ \vdash \ S \ \equiv \ T \ :: \ K
+      } \and 
+      \inferrule{
+       \Gamma \ \vdash \ S \ \equiv \ U \ :: \ K \\ \Gamma \ \vdash \ U \ \equiv \ T \ :: \ K
+      }{
+        \Gamma \ \vdash \ S \ \equiv \ T \ :: \ K
+      } 
+    \end{mathpar}
+
+Правила эквивалентности для термов:
+\begin{mathpar}
+      \inferrule{
+        \Gamma \ \vdash \ S_{1} \equiv S_{2} \ :: \ \ast \\ \Gamma , \ x:S_{1} \ \vdash \ t_{1} \equiv t_{2} : T
+      } {
+				\Gamma \ \vdash \ \lambda x:S_{2}.t_{2} \ : \ \Pi x : S_{1}.T
+			} \and 
+      \inferrule{
+       \Gamma \ \vdash \ t_{1} \equiv S_{1} : \Pi x \ : \ S.T \\ \Gamma \ \vdash \ t_{2} \ \equiv \ s_{2}:S
+      }{
+        \Gamma \ \vdash \ t_{1} \ t_{2} \ \equiv \ s_{1} \ s_{2} : [x \mapsto t_{2}] T
+      } \and
+			
+		
+      \inferrule{
+				\Gamma , \ x:S \ \vdash \ t:T \\ \Gamma \ \vdash \ s:S
+      }{
+        \Gamma \ \vdash \ (\lambda x:S.t) \ s \ \equiv \ [x \mapsto s] \ t : [x \mapsto s] \ T
+      } \and 
+      \inferrule{
+				\Gamma \ \vdash \ t: \ \Pi \ x :S.T \\ x \ \notin \ FV(y)
+      }{
+         \Gamma \ \vdash \ \lambda x:T.t \ x \ \equiv \ t: \ \Pi \ x \ :S.T
+      } \and 
+      \inferrule{
+				\Gamma \ \vdash \ t : T
+      }{
+        \Gamma \ \vdash \ t \ \equiv \ t:T
+      } \and 
+      \inferrule{
+       \Gamma \ \vdash \ t \ \equiv \ s \ :T
+      }{
+        \Gamma \ \vdash \ s \ \equiv \ t \ :T
+      } \and 
+      \inferrule{
+       \Gamma \ \vdash \ s \ \equiv \ u \ :T \\ \Gamma \ \vdash \ u \ \equiv \ t \ :T
+      }{
+        \Gamma \ \vdash \ s \ \equiv \ t \ :T
+      } 
+    \end{mathpar}

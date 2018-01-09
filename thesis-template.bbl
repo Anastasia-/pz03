@@ -1,0 +1,113 @@
+\begin{thebibliography}{10}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\selectlanguage{#1}\fi}
+\providecommand*{\href}[2]{{\small #2}}
+\providecommand*{\url}[1]{{\small #1}}
+\providecommand*{\BibUrl}[1]{\url{#1}}
+\providecommand{\BibAnnote}[1]{}
+\providecommand*{\BibEmph}[1]{#1}
+\ProvideTextCommandDefault{\cyrdash}{\iflanguage{russian}{\hbox
+  to.8em{--\hss--}}{\textemdash}}
+\providecommand*{\BibDash}{\ifdim\lastskip>0pt\unskip\nobreak\hskip.2em plus
+  0.1em\fi
+\cyrdash\hskip.2em plus 0.1em\ignorespaces}
+\renewcommand{\newblock}{\ignorespaces}
+
+\bibitem{certified}
+\selectlanguageifdefined{english}
+\BibEmph{Chlipala~Adam}. Certified Programming with Dependent Types: A
+  Pragmatic Introduction to the Coq Proof Assistant. \BibDash
+\newblock MIT Press, 2013.
+
+\bibitem{msu}
+\selectlanguageifdefined{english}
+\BibEmph{Крупский~ВН, Кузнецов~СЛ}. Практикум по
+  математической логике. COQ. \BibDash
+\newblock Кафедра математической логики и
+  теории алгоритмов, 2013.
+
+\bibitem{pirs}
+\selectlanguageifdefined{english}
+\BibEmph{Пирс~Бенджамин}. Типы в языках
+  программирования~// \BibEmph{М.: Лямбда Пресс
+  Добросвет}. \BibDash
+\newblock 2012. \BibDash
+\newblock P.~656.
+
+\bibitem{girard}
+\selectlanguageifdefined{english}
+\BibEmph{Girard~Jean-Yves}. The system F of variable types, fifteen years
+  later~// \BibEmph{Theoretical computer science}. \BibDash
+\newblock 1986. \BibDash
+\newblock Vol.~45. \BibDash
+\newblock P.~159--192.
+
+\bibitem{lectures}
+\selectlanguageifdefined{english}
+\BibEmph{S{\o}rensen~Morten~Heine, Urzyczyn~Pawel}. Lectures on the
+  Curry-Howard isomorphism. \BibDash
+\newblock Elsevier, 2006. \BibDash
+\newblock Vol.~149.
+
+\bibitem{ml}
+\selectlanguageifdefined{english}
+\BibEmph{Baxter~Samuel}. An ML Implementation of the Dependently Typed Lambda
+  Calculus. \BibDash
+\newblock 2014.
+
+\bibitem{hofmanndt}
+\selectlanguageifdefined{english}
+\BibEmph{Hofmann~Martin}. Syntax and semantics of dependent types~//
+  Extensional Constructs in Intensional Type Theory. \BibDash
+\newblock Springer, 1997. \BibDash
+\newblock P.~13--54.
+
+\bibitem{advanced}
+\selectlanguageifdefined{english}
+\BibEmph{Pierce~Benjamin~C}. Advanced topics in types and programming
+  languages. \BibDash
+\newblock MIT press, 2005.
+
+\bibitem{pauline}
+\selectlanguageifdefined{english}
+\BibEmph{Paulin-Mohring~Christine}. Inductive definitions in the system coq
+  rules and properties~// International Conference on Typed Lambda Calculi and
+  Applications~/ Springer. \BibDash
+\newblock 1993. \BibDash
+\newblock P.~328--345.
+
+\bibitem{coq}
+\selectlanguageifdefined{english}
+\BibEmph{Coquand~Thierry, Paulin~Christine}. Inductively defined types~//
+  COLOG-88~/ Springer. \BibDash
+\newblock 1990. \BibDash
+\newblock P.~50--66.
+
+\bibitem{pfenning}
+\selectlanguageifdefined{english}
+\BibEmph{Pfenning~Frank, Paulin-Mohring~Christine}. Inductively defined types
+  in the Calculus of Constructions~// International Conference on Mathematical
+  Foundations of Programming Semantics~/ Springer. \BibDash
+\newblock 1989. \BibDash
+\newblock P.~209--228.
+
+\bibitem{huet}
+\selectlanguageifdefined{english}
+\BibEmph{Huet~G{\'e}rard, Kahn~Gilles, Paulin-Mohring~Christine}. The Coq proof
+  assistant: a tutorial: version 8.7.1~: Ph.\,D. thesis~/ G{\'e}rard~Huet,
+  Gilles~Kahn, Christine~Paulin-Mohring~; Inria. \BibDash
+\newblock 2017.
+
+\bibitem{coquand1986analysis}
+\selectlanguageifdefined{english}
+\BibEmph{Coquand~Thierry}. An analysis of Girard's paradox~: Ph.\,D. thesis~/
+  Thierry~Coquand~; INRIA. \BibDash
+\newblock 1986.
+
+\bibitem{bertot}
+\selectlanguageifdefined{english}
+\BibEmph{Bertot~Yves}. Coq in a Hurry. \BibDash
+\newblock 2006.
+
+\end{thebibliography}
